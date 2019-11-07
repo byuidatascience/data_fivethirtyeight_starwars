@@ -42,6 +42,8 @@ This data only contains subjects that said yes to seeing at least one of the mov
 |   3288576462|character_feeling |BobaFett                          |Somewhat unfavorably |
 |   3289582868|character_feeling |ObiWanKenobi                      |Very favorably       |
 
+## Variable description
+
 - **seen_any6:** Have you seen any of the 6 films in the Star Wars franchise? 
 - **fan_yn:** Do you consider yourself to be a fan of the Star Wars film franchise?
 - **which_seen:** Which of the following Star Wars films have you seen? Please select all that apply.
