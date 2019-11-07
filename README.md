@@ -1,7 +1,46 @@
 # fivethirtyeight_starwars
 Formatted data from the [fivethirtyeight Star Wars article](https://fivethirtyeight.com/features/americas-favorite-star-wars-movies-and-least-favorite-characters/). There data is available under creative commons - https://github.com/fivethirtyeight/data.
 
-This data only contains subjects that said yes to seeing at least one of the movies.
+## Data details
+
+This data only contains subjects that said yes to seeing at least one of the movies. There are three `.csv` files that I created from the files provided by fivethirtyeight.
+
+1. **survey_oneresponse_questions.csv:** The columns that have survey questions with one response.
+2. **survey_multiresponse_questions.csv:** A long format table of the multiple response questions.
+3. **survey_wide_all.csv:** Data in the same format as the fivethirtyeight data with cleaned column names.
+
+### Survey wide
+
+| respondentid|age   |gender |income              |education                        |location_census    |seen_any6 |fan_yn |fan_expanded |fan_startrek |shot_first                       |
+|------------:|:-----|:------|:-------------------|:--------------------------------|:------------------|:---------|:------|:------------|:------------|:--------------------------------|
+|   3292879998|18-29 |Male   |NA                  |High school degree               |South Atlantic     |Yes       |Yes    |No           |No           |I don't understand this question |
+|   3292765271|18-29 |Male   |$0 - $24,999        |High school degree               |West North Central |Yes       |No     |NA           |No           |I don't understand this question |
+|   3292763116|18-29 |Male   |$100,000 - $149,999 |Some college or Associate degree |West North Central |Yes       |Yes    |NA           |Yes          |I don't understand this question |
+|   3292731220|18-29 |Male   |$100,000 - $149,999 |Some college or Associate degree |West North Central |Yes       |Yes    |No           |No           |Greedo                           |
+|   3292719380|18-29 |Male   |$25,000 - $49,999   |Bachelor degree                  |Middle Atlantic    |Yes       |Yes    |No           |Yes          |Han                              |
+|   3292684787|18-29 |Male   |NA                  |High school degree               |East North Central |Yes       |Yes    |No           |No           |Han                              |
+
+### Single Response
+
+| respondentid|age   |gender |income              |education                        |location_census    |seen_any6 |fan_yn |fan_expanded |fan_startrek |shot_first                       |
+|------------:|:-----|:------|:-------------------|:--------------------------------|:------------------|:---------|:------|:------------|:------------|:--------------------------------|
+|   3292879998|18-29 |Male   |NA                  |High school degree               |South Atlantic     |Yes       |Yes    |No           |No           |I don't understand this question |
+|   3292765271|18-29 |Male   |$0 - $24,999        |High school degree               |West North Central |Yes       |No     |NA           |No           |I don't understand this question |
+|   3292763116|18-29 |Male   |$100,000 - $149,999 |Some college or Associate degree |West North Central |Yes       |Yes    |NA           |Yes          |I don't understand this question |
+|   3292731220|18-29 |Male   |$100,000 - $149,999 |Some college or Associate degree |West North Central |Yes       |Yes    |No           |No           |Greedo                           |
+|   3292719380|18-29 |Male   |$25,000 - $49,999   |Bachelor degree                  |Middle Atlantic    |Yes       |Yes    |No           |Yes          |Han                              |
+|   3292684787|18-29 |Male   |NA                  |High school degree               |East North Central |Yes       |Yes    |No           |No           |Han
+
+### Multiple response
+
+| respondentid|question          |choice                            |answer               |
+|------------:|:-----------------|:---------------------------------|:--------------------|
+|   3290477551|character_feeling |LandoCalrissian                   |Somewhat favorably   |
+|   3290337251|character_feeling |PrincessLeiaOrgana                |Very favorably       |
+|   3290206907|rank_1f6w         |StarWars:EpisodeIThePhantomMenace |6                    |
+|   3289621004|character_feeling |EmperorPalpatine                  |Somewhat favorably   |
+|   3288576462|character_feeling |BobaFett                          |Somewhat unfavorably |
+|   3289582868|character_feeling |ObiWanKenobi                      |Very favorably       |
 
 - **seen_any6:** Have you seen any of the 6 films in the Star Wars franchise? 
 - **fan_yn:** Do you consider yourself to be a fan of the Star Wars film franchise?
@@ -17,3 +56,4 @@ This data only contains subjects that said yes to seeing at least one of the mov
 - **income:** Household Income
 - **education:** Education
 - **location_census:** Location (Census Region)
+

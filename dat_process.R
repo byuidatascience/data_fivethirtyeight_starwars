@@ -60,4 +60,4 @@ dat_multiresponse <- dat %>%
 
 write_csv(dat_general, path = "survey_oneresponse_questions.csv")
 write_csv(dat_multiresponse, path = "survey_multiresponse_questions.csv")
-write_csv(dat, path = "sruvey_wide_all.csv")
+write_csv(dat, path = "survey_wide_all.csv")
